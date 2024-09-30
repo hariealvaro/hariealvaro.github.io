@@ -1,0 +1,59 @@
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+header .contact a {
+    margin: 0 15px;
+    text-decoration: none;
+    color: white;
+}
+
+footer a {
+    text-decoration: none;
+}
+
+.card {
+    transition: transform 0.2s;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+}
+
+h2 {
+    position: relative;
+    padding-bottom: 10px;
+}
+
+h2::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 3px;
+    width: 50px;
+    background: #4CAF50; /* Warna garis bawah */
+}
+
+.list-unstyled {
+    padding-left: 0;
+}
+
+.list-unstyled li {
+    font-size: 1.1em;
+}
+
+.contact i {
+    margin: 0 10px;
+    transition: color 0.3s;
+}
+
+.contact i:hover {
+    color: #4CAF50; /* Mengubah warna saat hover */
+}
+
+.project-img {
+    height: 200px; /* Atur tinggi gambar sesuai kebutuhan */
+    object-fit: cover; /* Memastikan gambar tidak terdistorsi */
+    width: 100%; /* Memastikan gambar memenuhi lebar kartu */
+}

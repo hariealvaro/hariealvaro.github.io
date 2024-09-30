@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CV Portfolio Hari Yadi</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" rel="stylesheet">
+    <link href="styles.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <script>
+        // Typing effect function
+        function typeWriter(element, text, speed) {
+            let i = 0;
+            function typing() {
+                if (i < text.length) {
+                    element.innerHTML += text.charAt(i);
+                    i++;
+                    setTimeout(typing, speed);
+                }
+            }
+            typing();
+        }
+
+        document.addEventListener("DOMContentLoaded", function () {
+            const nameElement = document.getElementById('name');
+            const nameText = "Hari Yadi, S.Kom";
+            typeWriter(nameElement, nameText, 100); // 100 ms per character
+        });
+    </script>
+</head>
+
+<body>
+    <header class="bg-primary text-white text-center py-5" id="home">
+        <h1 id="name"></h1>
+        <p class="lead">Datacenter Operation | Network Engineer | IT Support | IT Infrastructure</p>
+        <div class="contact mb-3">
+            <a href="mailto:Harie.yadi95@gmail.com" class="text-white">
+                <i class="fas fa-envelope fa-lg"></i>
+            </a>
+            <a href="https://wa.me/6285817560399" class="text-white">
+                <i class="fab fa-whatsapp fa-lg"></i>
+            </a>
+            <a href="https://www.linkedin.com/in/hari-yadi200195" class="text-white">
+                <i class="fab fa-linkedin fa-lg"></i>
+            </a>
+            <a href="CV_Hari_Yadi.pdf" class="text-white" download>
+                <i class="fas fa-download fa-lg"></i>
+            </a>
+        </div>
+        <a href="#about" class="btn btn-light mt-3">Learn More</a>
+    </header>
+
+    <main class="container my-5">
+        <section id="about" class="mb-5">
+            <h2>Tentang Saya</h2>
+            <p>Saya menerima gelar Sarjana Komputer dari STMIK Mitra Karya pada tahun 2016. Dengan antusiasme besar terhadap Teknologi Informasi dan pengalaman dalam Networking IT, Support IT, dan Datacenter, saya selalu tertantang untuk belajar dan mengembangkan kemampuan baru.</p>
+        </section>
+
+        <section id="skills" class="mb-5">
+            <h2>Keahlian</h2>
+            <div class="row">
+                <div class="col-md-6">
+                    <h5>Keahlian Teknis</h5>
+                    <ul class="list-unstyled">
+                        <li class="d-flex align-items-center mb-3 wow animate__animated animate__fadeInLeft">
+                            <i class="fas fa-check-circle me-2" style="color: #4CAF50;"></i>
+                            <span>Network IT</span>
+                        </li>
+                        <li class="d-flex align-items-center mb-3 wow animate__animated animate__fadeInLeft" data-wow-delay="0.2s">
+                            <i class="fas fa-check-circle me-2" style="color: #4CAF50;"></i>
+                            <span>Linux</span>
+                        </li>
+                        <li class="d-flex align-items-center mb-3 wow animate__animated animate__fadeInLeft" data-wow-delay="0.4s">
+                            <i class="fas fa-check-circle me-2" style="color: #4CAF50;"></i>
+                            <span>Cisco</span>
+                        </li>
+                        <li class="d-flex align-items-center mb-3 wow animate__animated animate__fadeInLeft" data-wow-delay="0.6s">
+                            <i class="fas fa-check-circle me-2" style="color: #4CAF50;"></i>
+                            <span>Mikrotik</span>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-md-6">
+                    <h5>Soft Skills</h5>
+                    <ul class="list-unstyled">
+                        <li class="d-flex align-items-center mb-3 wow animate__animated animate__fadeInRight">
+                            <i class="fas fa-check-circle me-2" style="color: #4CAF50;"></i>
+                            <span>Troubleshooting IT</span>
+                        </li>
+                        <li class="d-flex align-items-center mb-3 wow animate__animated animate__fadeInRight" data-wow-delay="0.2s">
+                            <i class="fas fa-check-circle me-2" style="color: #4CAF50;"></i>
+                            <span>Komunikasi</span>
+                        </li>
+                        <li class="d-flex align-items-center mb-3 wow animate__animated animate__fadeInRight" data-wow-delay="0.4s">
+                            <i class="fas fa-check-circle me-2" style="color: #4CAF50;"></i>
+                            <span>Kerja Tim</span>
+                        </li>
+                        <li class="d-flex align-items-center mb-3 wow animate__animated animate__fadeInRight" data-wow-delay="0.6s">
+                            <i class="fas fa-check-circle me-2" style="color: #4CAF50;"></i>
+                            <span>Manajemen Waktu</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <section id="experience" class="mb-5">
+            <h2>Pengalaman Kerja</h2>
+            <div class="card mb-3 wow animate__animated animate__fadeInUp">
+                <div class="card-body">
+                    <h5 class="card-title">Sr. IT Helpdesk & NOC</h5>
+                    <h6 class="card-subtitle mb-2 text-muted">PT. Solusi Sinergi Digital, Tbk (SURGE), Jakarta - Jul 2024 – Sekarang</h6>
+                    <ul>
+                        <li>Troubleshoot perangkat IT (Laptop, Macbook, Desktop, Printer)</li>
+                        <li>Monitoring dan manage network (WiFi, Router, ISP)</li>
+                        <li>Manage email, CCTV, NAS Storage, VPN</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="card mb-3 wow animate__animated animate__fadeInUp">
+                <div class="card-body">
+                    <h5 class="card-title">Data Center Operation</h5>
+                    <h6 class="card-subtitle mb-2 text-muted">PT. Dunia Virtual Online, Tbk (AREA31), Depok - Jan 2023 – Jul 2024</h6>
+                    <h6 class="card-subtitle mb-2 text-muted">PT. Dwi Tunggal Putra, Jakarta - Apr 2017 – Desember 2022</h6>
+                    <ul>
+                        <li>Monitoring jaringan dan utilitas datacenter</li>
+                        <li>Troubleshooting jaringan dan server (Linux & Windows)</li>
+                        <li>Konfigurasi perangkat Cisco (Switching, VLAN, Trunk)</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <section id="projects" class="mb-5">
+            <h2>Proyek Saya</h2>
+            <div class="row">
+                <div class="col-md-4 mb-4">
+                    <div class="card">
+                        <img src="project1.jpg" class="card-img-top project-img" alt="Project 1">
+                        <div class="card-body">
+                            <h5 class="card-title">Proyek 1</h5>
+                            <p class="card-text">Deskripsi singkat tentang proyek ini.</p>
+                            <a href="#" class="btn btn-primary">Lihat Detail</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="card">
+                        <img src="project2.jpg" class="card-img-top project-img" alt="Project 2">
+                        <div class="card-body">
+                            <h5 class="card-title">Proyek 2</h5>
+                            <p class="card-text">Deskripsi singkat tentang proyek ini.</p>
+                            <a href="#" class="btn btn-primary">Lihat Detail</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="card">
+                        <img src="project3.jpg" class="card-img-top project-img" alt="Project 3">
+                        <div class="card-body">
+                            <h5 class="card-title">Proyek 3</h5>
+                            <p class="card-text">Deskripsi singkat tentang proyek ini.</p>
+                            <a href="#" class="btn btn-primary">Lihat Detail</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="education" class="mb-5">
+            <h2>Pendidikan</h2>
+            <div class="card mb-3 wow fadeInUp">
+                <div class="card-body">
+                    <p><strong>Sarjana Komputer (S.Kom)</strong> - STMIK Mitra Karya, Bekasi - 2012 - 2016 | IPK: 3.31</p>
+                    <p><strong>Mekanik Industri</strong> - SMKN 1 Tarumajaya, Bekasi - 2009 - 2012</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="certifications" class="mb-5">
+            <h2>Sertifikasi</h2>
+            <div class="card mb-3 wow fadeInUp">
+                <div class="card-body">
+                    <ul>
+                        <li>CCNA Network Engineer - Digital Talent Scholarship (KOMINFO) - 2020</li>
+                        <li>Networking Technician - BBPLK Cevest (Kemenaker) - 2017</li>
+                        <li>Cloud Practitioner Essentials - Dicoding - 2022</li>
+                        <li>Dasar Cisco & Mikrotik - ID-Networkers - 2023</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <section id="testimonials" class="mb-5">
+            <h2>Testimonial</h2>
+            <div class="card mb-3 wow fadeInUp">
+                <div class="card-body">
+                    <p>"Hari adalah seorang profesional yang sangat berdedikasi. Keahliannya dalam jaringan dan infrastruktur TI sangat mengesankan." - Klien A</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="text-center py-4 bg-dark text-white">
+        <p>© 2024 Hari Yadi. Follow me on <a href="https://www.linkedin.com/in/hari-yadi200195" class="text-white">LinkedIn</a></p>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/wow.js"></script>
+    <script>
+        new WOW().init();
+    </script>
+</body>
+</html>
