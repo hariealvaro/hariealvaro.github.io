@@ -75,10 +75,10 @@ h2::after {
 .back-to-portfolio {
             position: absolute;
             top: 20px;
-            left: 20px;
-}
+            left: 40px; /* Ubah nilai ini untuk menggeser tombol lebih ke kanan */
+        }
 
-    .back-to-portfolio .btn {
+        .back-to-portfolio .btn {
             padding: 10px 20px;
             font-size: 14px;
         }
