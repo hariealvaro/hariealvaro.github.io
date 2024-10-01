@@ -72,13 +72,3 @@ h2::after {
     object-fit: contain; /* Memastikan gambar perusahaan tidak terdistorsi */
     margin-left: 20px; /* Memberikan jarak antara logo dan teks */
 }
-.back-to-portfolio {
-            position: absolute;
-            top: 20px;
-            left: 40px; /* Ubah nilai ini untuk menggeser tombol lebih ke kanan */
-        }
-
-        .back-to-portfolio .btn {
-            padding: 10px 20px;
-            font-size: 14px;
-        }
