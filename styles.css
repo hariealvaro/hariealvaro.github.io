@@ -2,6 +2,14 @@ body {
     font-family: 'Roboto', sans-serif;
 }
 
+header .profile-img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%; /* Membuat gambar menjadi bulat */
+    object-fit: cover;
+    border: 4px solid white; /* Memberikan border putih */
+}
+
 header .contact a {
     margin: 0 15px;
     text-decoration: none;
@@ -53,7 +61,14 @@ h2::after {
 }
 
 .project-img {
-    height: 200px; /* Atur tinggi gambar sesuai kebutuhan */
+    height: 200px; /* Atur tinggi gambar proyek */
     object-fit: cover; /* Memastikan gambar tidak terdistorsi */
     width: 100%; /* Memastikan gambar memenuhi lebar kartu */
+}
+
+.company-logo {
+    width: 100px; /* Lebar foto perusahaan */
+    height: 100px;
+    object-fit: contain; /* Memastikan gambar perusahaan tidak terdistorsi */
+    margin-left: 20px; /* Memberikan jarak antara logo dan teks */
 }
