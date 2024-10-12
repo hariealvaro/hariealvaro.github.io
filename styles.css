@@ -72,3 +72,77 @@ h2::after {
     object-fit: contain; /* Memastikan gambar perusahaan tidak terdistorsi */
     margin-left: 20px; /* Memberikan jarak antara logo dan teks */
 }
+.modal-body img.company-logo-popup {
+    max-width: 100px; /* Sesuaikan ukuran yang lebih kecil */
+    float: right;
+    margin-left: 15px;
+    margin-bottom: 10px;
+}
+/* Modal popup untuk versi desktop */
+@media (min-width: 9092px) {
+    .modal-dialog {
+        max-width: 80%; /* Mengatur lebar modal menjadi 80% dari layar */
+    }
+
+    .modal-content {
+        padding: 20px; /* Memberikan padding lebih besar */
+    }
+
+    .modal-body img {
+        width: 250px; /* Memperbesar gambar profil di dalam modal */
+        height: 250px;
+    }
+
+    .modal-header {
+        font-size: 1.5rem; /* Memperbesar ukuran font untuk judul modal */
+    }
+}
+.profile-img-wrapper {
+        position: relative;
+        width: 100%;
+        max-width: 200px; /* Reduced max width for smaller profile image */
+        margin: 0 auto;
+        border-radius: 50%;
+        padding: 3px; /* Reduced padding for smaller border */
+        background: linear-gradient(135deg, #FFA500, #FFA500); /* Gradient border */
+        box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.2); /* Shadow effect */
+    }
+
+    .profile-img-circle {
+        width: 100%;
+        border-radius: 50%;
+        transition: transform 0.3s;
+        display: block;
+    }
+
+    .profile-img-wrapper:hover .profile-img-circle {
+        transform: scale(1.1); /* Zoom effect on hover */
+    }
+
+    .contact a {
+        transition: color 0.3s;
+    }
+
+    .contact a:hover {
+        color: #f8c94b; /* Hover color effect for social icons */
+    }
+
+    /* Styles for mobile */
+    @media (max-width: 767px) {
+        .profile-img-wrapper {
+            margin-bottom: 20px; /* Space between image and text */
+            display: block; /* Ensure it's displayed */
+            text-align: center; /* Center image in mobile view */
+        }
+        
+        .col-md-6.text-center {
+            order: 1; /* Position the image above the text */
+        }
+
+        .col-md-6.text-md-left {
+            order: 2; /* Position the text below the image */
+        }
+    }
+.header-margin {
+    margin-top: 40px; /* Adjust as needed */
+}
